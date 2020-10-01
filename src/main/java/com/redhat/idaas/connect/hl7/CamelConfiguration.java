@@ -120,7 +120,7 @@ public class CamelConfiguration extends RouteBuilder {
      *
      */
 	  // ADT
-	  from("file:src/data-in/hl7v2/ADT?delete=true?noop=true"))
+	  from("file:src/data-in/hl7v2/ADT?delete=true?noop=true")
           .routeId("hl7Admissions")
           .convertBodyTo(String.class)
           // set Auditing Properties
